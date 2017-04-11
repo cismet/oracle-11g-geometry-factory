@@ -16,7 +16,6 @@
     <name>Oracle 11g Geometry Factory</name>
     <description>Geometry Factory implementation for Oracle 11g compliant dialect</description>
 
-
     <scm>
         <connection>https://github.com/cismet/oracle-11g-geometry-factory.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/oracle-11g-geometry-factory.git</developerConnection>
@@ -73,10 +72,10 @@
         </dependency>
         <!-- END: managed dependencies -->     
         
-        <dependency>
-            <groupId>oracle.jdbc</groupId>
-            <artifactId>ojdbc7_g</artifactId>
-            <version>1.0</version>
+        <dependency> 
+            <groupId>com.oracle.jdbc</groupId> 
+            <artifactId>ojdbc7</artifactId> 
+            <version>12.1.0.2</version> 
         </dependency>
         <dependency>
             <groupId>com.vividsolutions</groupId>
