@@ -57,6 +57,12 @@
         <dependency>
             <groupId>de.cismet.commons</groupId>
             <artifactId>cismet-commons</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.vividsolutions</groupId>
+                    <artifactId>jts</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- END: cids dependencies -->
              
@@ -65,11 +71,6 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
-        
-        <dependency>
-            <groupId>com.vividsolutions</groupId>
-            <artifactId>jts</artifactId>
-        </dependency>
         <!-- END: managed dependencies -->     
         
         <dependency> 
@@ -77,10 +78,18 @@
             <artifactId>ojdbc7</artifactId> 
             <version>12.1.0.2</version> 
         </dependency>
+        <!--
+            Use JTS 1.14. See #2
+        -->
         <dependency>
             <groupId>com.vividsolutions</groupId>
-            <artifactId>jtsio</artifactId>
-            <version>1.12</version>
+            <artifactId>jts-core</artifactId>
+            <version>1.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts-ora</artifactId>
+            <version>1.14.0</version>
         </dependency>
         
         <!-- BEGIN: provided dependencies -->
